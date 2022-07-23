@@ -29,14 +29,14 @@ h1 {
 .container {
     height: 65rem;
     width: 52rem;
-    background: #ffffff3b;
+    background: #ffffff00;
     position: relative;
     top: 40rem;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 1.6rem;
     overflow: hidden;
-    backdrop-filter: blur(1.5rem);
+    backdrop-filter: blur(.7rem);
 }
 
 ::-webkit-scrollbar {
@@ -170,12 +170,14 @@ textarea {
     left: 2rem;
     width: 28rem;
     caret-color: #d6751adc;
+    width: 90%;
+    font-size: 2rem;
 }
 
 .note-title-input {
     top: 2rem;
     left: 2rem;
-    font-size: 3rem;
+    font-size: 3.5rem;
     height: 4.5rem;
     font-weight: bold;
     overflow: hidden;
@@ -209,10 +211,12 @@ textarea {
 }
 
 .settings {
-    height: 3.5rem;
-    width: 2.5rem;
+    /* border: 1px solid black; */
+    height: 1.5rem;
+    width: 3rem;
     position: absolute;
-    right: 2rem;
+    right: 3rem;
+    top: 8.8rem;
 }
 
 .settings:hover .menu {
@@ -283,5 +287,8 @@ button.add-note-btn:hover {
         height: 50rem;
     }
 
-
+    textarea {
+        font-size: 1.4rem;
+    }
 }
+

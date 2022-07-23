@@ -12,24 +12,52 @@ html {
 }
 
 body {
-    background: #d6751adc;
     font-family: 'Nunito', sans-serif;
+    background-image: url('/img/notesApp2MD.webp');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: .3rem .3rem .1rem rgba(0, 0, 0, 0.5);
 }
 
 .container {
-    height: 50rem;
-    width: 32rem;
-    background: #f5f5f5;
+    height: 65rem;
+    width: 52rem;
+    background: #ffffff3b;
     position: relative;
-    top: 30rem;
+    top: 40rem;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 1.6rem;
     overflow: hidden;
+    backdrop-filter: blur(1.5rem);
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #888;
+    height: .1rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d6751adc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8a4607dc;
 }
 
 .note-box {
-    height: 50rem;
+    height: 65rem;
     width: 100%;
     position: absolute;
     overflow-y: scroll;
@@ -107,7 +135,7 @@ hr {
 }
 
 .edit-note {
-    height: 50rem;
+    height: 65rem;
     width: 100%;
     background: #ffffff;
     position: absolute;
@@ -130,7 +158,7 @@ i.fa-arrow-left {
     align-items: center;
 }
 
-.fa-arrow-left > p {
+.fa-arrow-left>p {
     margin-left: 1rem;
     font-size: 1.4rem;
 }
@@ -191,14 +219,14 @@ textarea {
     transform: scale(1);
 }
 
-.menu span:nth-child(1){
+.menu span:nth-child(1) {
     position: relative;
     top: .5rem;
     left: .5rem;
     cursor: pointer;
 }
 
-.menu span:nth-child(2){
+.menu span:nth-child(2) {
     position: absolute;
     top: 2.8rem;
     left: .5rem;
@@ -233,4 +261,48 @@ span.delete-btn:hover {
 button.add-note-btn:hover {
     transition: all .3s;
     background: #28e628ab;
+}
+
+@media (max-width: 430px){
+    body {
+        background-size: 125%;
+    }
+
+    h1 {
+        font-size: 4rem;
+        margin-top: 3rem;
+    }
+
+    .container {
+        top: 35rem;
+        width: 40rem;
+        height: 50rem;
+    }
+
+    .edit-note {
+        height: 50rem;
+    }
+
+
+}
+
+@media (max-width: 360px){
+    body {
+        background-size: 135% !important;
+    }
+
+    h1 {
+        font-size: 4rem;
+        margin-top: 2rem;
+    }
+
+    .container {
+        width: 34rem;
+        top: 30rem;
+        height: 50rem;
+    }
+
+    .edit-note {
+        height: 50rem;
+    }
 }

@@ -265,7 +265,7 @@ button.add-note-btn:hover {
 
 @media (max-width: 430px){
     body {
-        background-size: 125%;
+        background-size: 132%;
     }
 
     h1 {
@@ -275,7 +275,7 @@ button.add-note-btn:hover {
 
     .container {
         top: 35rem;
-        width: 40rem;
+        width: 33rem;
         height: 50rem;
     }
 
@@ -284,25 +284,4 @@ button.add-note-btn:hover {
     }
 
 
-}
-
-@media (max-width: 360px){
-    body {
-        background-size: 135% !important;
-    }
-
-    h1 {
-        font-size: 4rem;
-        margin-top: 2rem;
-    }
-
-    .container {
-        width: 34rem;
-        top: 30rem;
-        height: 50rem;
-    }
-
-    .edit-note {
-        height: 50rem;
-    }
 }

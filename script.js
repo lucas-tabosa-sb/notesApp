@@ -67,7 +67,7 @@ function showNotes() {
     noteAdd ||
     `
  <span><i class="fa-solid fa-note-sticky"></i></span> 
- <span class="no-notes-message">No Notes here yet</span>`;
+ <span class="no-notes-message">Add a note first</span>`;
 }
 
 showNotes();
